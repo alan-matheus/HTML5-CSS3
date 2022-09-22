@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/cavalo.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+
+    <p>Tente abrir o site em dispositivos diferentes ou aumente e diminua o tamanho do navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="img/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="img/foto-m.png" type="image/png">
+        <img src="img/foto-g.png" alt="imagem flexível">
+    </picture>
+
+    <picture>
+        <source media="(max-width: 500px )" srcset="img/instalaciones-modificado.jpg" type="image/jpg">
+        <img src="img/instalaciones.jpg" alt="égua em estrebaria">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audio</p>
+
+    <audio preload="metadata" controls autoplay>
+        <source src="midia/your-love-young.mp3" type="audio/mpeg">
+        <p>Infelizmente seu audio não pôde ser carregado</p>
+        <a href="midia/your-love-young.mp3" download="your-love-young-logos.mp3" type="audio/mpeg">Clique aqui para baixar o arquivo</a>
+    </audio>
+</body>
+</html>
